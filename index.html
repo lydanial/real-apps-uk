@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Real Apps UK - simple, useful apps built for real life.">
+  <title>Real Apps UK</title>
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --navy-deep: #081c2c;
+      --lime: #b7e000;
+      --white: #ffffff;
+      --soft: #f5f7f8;
+      --text: #243746;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    header {
+      background: var(--navy-deep);
+      color: var(--white);
+      padding: 22px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .brand span {
+      color: var(--lime);
+    }
+
+    .hero {
+      min-height: 430px;
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      padding: 70px 7%;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.8rem, 7vw, 5.4rem);
+      line-height: 0.95;
+    }
+
+    .scribble {
+      width: 190px;
+      height: 7px;
+      background: var(--lime);
+      border-radius: 20px;
+      transform: rotate(-2deg);
+      margin: 18px 0 28px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 0;
+    }
+
+    .apps {
+      padding: 70px 7%;
+      background: var(--soft);
+    }
+
+    .apps h2 {
+      color: var(--navy);
+      font-size: 2.2rem;
+      margin: 0 0 32px;
+    }
+
+    .app-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 38px;
+      max-width: 900px;
+      box-shadow: 0 10px 30px rgba(8, 28, 44, 0.08);
+      border-top: 7px solid var(--lime);
+    }
+
+    .app-card h3 {
+      color: var(--navy);
+      font-size: 2rem;
+      margin: 0 0 5px;
+    }
+
+    .tagline {
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 22px;
+    }
+
+    .app-card p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .links {
+      margin-top: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: var(--lime);
+      color: var(--navy-deep);
+    }
+
+    .secondary {
+      border: 2px solid var(--navy);
+      color: var(--navy);
+    }
+
+    .coming {
+      padding: 55px 7%;
+      text-align: center;
+    }
+
+    .coming h2 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: var(--navy-deep);
+      color: var(--white);
+      padding: 28px 7%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--lime);
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+      }
+
+      .app-card {
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">REAL APPS <span>UK</span></div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Simple apps.<br>Properly useful.</h1>
+    <div class="scribble"></div>
+
+    <p>
+      Real Apps UK makes straightforward apps for real people.
+      Useful tools, a bit of personality, and no need to make
+      something complicated when it doesn't need to be.
+    </p>
+  </div>
+</section>
+
+<section class="apps">
+
+  <h2>Our apps</h2>
+
+  <div class="app-card">
+
+    <h3>What's the Job, Mate?</h3>
+
+    <div class="tagline">
+      Proper tool, for the job.
+    </div>
+
+    <p>
+      A straightforward quoting and job-pricing tool built for
+      tradespeople. Add your costs, labour and business pot,
+      see what the job is really worth, and understand exactly
+      what a customer discount is taking out of your pocket
+      before you agree to it.
+    </p>
+
+    <div class="links">
+      <a class="button primary" href="whats-the-job-mate/privacy.html">
+        Privacy Policy
+      </a>
+
+      <a class="button secondary" href="mailto:chris@lydanialfacilities.co.uk">
+        Support
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="coming">
+  <h2>More daft little ideas are coming.</h2>
+  <p>
+    If they're useful enough to earn a place here, you'll find them here.
+  </p>
+</section>
+
+<footer>
+  © 2026 Real Apps UK &nbsp;•&nbsp;
+  <a href="mailto:chris@lydanialfacilities.co.uk">
+    chris@lydanialfacilities.co.uk
+  </a>
+</footer>
+
+</body>
+</html>
