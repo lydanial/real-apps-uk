@@ -4,126 +4,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Really Rude Reminders | Real Apps UK</title>
-<meta name="description" content="Meet Scruffy. The ridiculously rude reminder app with attitude.">
+
+<title>Really Rude Reminders | Meet Scruffy</title>
+
+<meta name="description" content="You make the reminders. Scruffy does the shouting. The reminder app with a filthy personality.">
+
 <meta property="og:title" content="Really Rude Reminders">
-<meta property="og:description" content="You make the reminders. Scruffy does the shouting.">
+<meta property="og:description" content="Forgetful bastard? Meet Scruffy.">
+<meta property="og:image" content="https://lydanial.github.io/real-apps-uk/really-rude-reminders/scruffy.png">
 <meta property="og:type" content="website">
 
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-* { box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background: #eff4eb;
-  color: #0b1d36;
-  font-family: Arial, sans-serif;
+  background: #0b1d36;
+  color: #eff4eb;
+  font-family: 'Nunito', sans-serif;
   text-align: center;
 }
-header {
-  background: #0b1d36;
-  color: white;
-  padding: 28px 15px;
-}
-header h1 {
-  margin: 0;
-  font-size: 30px;
-}
+
 main {
-  max-width: 700px;
+  max-width: 950px;
   margin: auto;
-  padding: 25px 20px;
+  padding: 18px 20px;
 }
-h2 { font-size: 32px; }
-p {
-  font-size: 18px;
-  line-height: 1.6;
+
+h1 {
+  font-family: 'Kalam', cursive;
+  font-size: clamp(25px, 6vw, 46px);
+  line-height: 1.2;
+  margin: 10px 0;
 }
+
 .line {
   height: 6px;
-  width: 180px;
+  width: 65%;
+  max-width: 350px;
   background: #69c51e;
-  border-radius: 8px;
-  margin: 20px auto;
+  border-radius: 10px;
+  margin: 10px auto 15px;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .scruffy {
-  width: 240px;
-  max-width: 85%;
-}
-.panel {
-  background: white;
-  border: 2px solid #0b1d36;
-  border-radius: 22px;
-  padding: 22px;
-  margin: 25px 0;
-}
-.store {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
   display: block;
-  background: #14952e;
-  color: white;
-  padding: 18px;
-  border-radius: 12px;
-  margin: 12px 0;
-  font-weight: bold;
-  font-size: 18px;
+  margin: auto;
+  filter: drop-shadow(0 8px 15px #0005);
 }
+
+.intro {
+  flex: 1;
+}
+
+h2 {
+  font-family: 'Kalam', cursive;
+  color: #83d735;
+  font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.2;
+  margin: 8px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 12px 0;
+}
+
+.slogan {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 18px 0;
+}
+
+.stores {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 18px auto 8px;
+  max-width: 650px;
+}
+
+.store {
+  flex: 1;
+  background: #69c51e;
+  color: #0b1d36;
+  padding: 13px 10px;
+  border-radius: 14px;
+  font-weight: 900;
+  font-size: 19px;
+}
+
 .store small {
   display: block;
-  margin-top: 6px;
+  font-size: 13px;
+  margin-top: 3px;
 }
+
+.price {
+  font-size: 14px;
+  color: #c4d0d9;
+}
+
 footer {
-  background: #0b1d36;
-  color: white;
-  padding: 25px 15px;
+  font-size: 13px;
+  padding: 15px;
+  color: #a8b6c7;
 }
-footer a { color: #a7e65b; }
+
+footer a {
+  color: #a8b6c7;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+
+  .hero {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .scruffy {
+    width: 420px;
+    max-width: 95%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  main {
+    padding: 12px 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .slogan {
+    font-size: 22px;
+  }
+
+  .store {
+    font-size: 16px;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>REALLY RUDE REMINDERS</h1>
-</header>
-
 <main>
 
-<h2>Meet Scruffy.</h2>
+<h1>REALLY RUDE REMINDERS</h1>
 <div class="line"></div>
 
-<img class="scruffy" src="scruffy.png"
-alt="Scruffy the ridiculously rude reminder dog"
-onerror="this.style.display='none'">
+<section class="hero">
 
-<h2>You make the reminders.<br>
-I do the bloody shouting.</h2>
+<img class="scruffy"
+src="scruffy.png"
+alt="Scruffy, the foul-mouthed reminder dog">
 
-<p>Forget birthdays? Miss appointments?
-Keep forgetting to renew your MOT?</p>
+<div class="intro">
 
-<p>Meet Scruffy, the four-legged little
-bastard who refuses to let you forget.</p>
+<h2>Forgetful bastard?<br>Meet Scruffy.</h2>
 
-<div class="panel">
-<h2>Reminders with attitude.</h2>
+<p>Birthdays, appointments, medication, MOTs...
+whatever you keep bloody forgetting.</p>
 
-<p>🎂 Birthdays and anniversaries</p>
-<p>📅 Appointments and everyday reminders</p>
-<p>🚗 MOT, insurance and renewals</p>
-<p>💊 Medication reminders</p>
-<p>🔔 Custom repeating notifications</p>
-<p>🐶 Ridiculously rude Scruffy dialogue</p>
+<p class="slogan">
+You make the reminders.<br>
+Scruffy does the shouting.
+</p>
+
+<p>A genuinely useful reminder app with
+an absolutely filthy personality.</p>
 
 </div>
 
-<div class="panel">
-<h2>Too rude for you?</h2>
-<p>Switch to Good Boy mode for a
-friendlier reminder experience.</p>
-<p>Same useful reminders.
-Considerably less abuse.</p>
-</div>
+</section>
 
-<h2>Get Really Rude Reminders</h2>
+<div class="stores">
 
 <div class="store">
 Google Play
@@ -135,14 +211,19 @@ Apple App Store
 <small>Coming soon</small>
 </div>
 
-<p>Free to use, with an optional
-one-time purchase to remove adverts.</p>
+</div>
+
+<p class="price">
+Free to use. Optional one-time purchase to remove adverts.
+</p>
 
 </main>
 
 <footer>
-<p>Really Rude Reminders<br>
-By Real Apps UK</p>
+
+<p style="font-size:13px">
+Made by Real Apps UK
+</p>
 
 <a href="privacy.html">Privacy Policy</a>
 &nbsp; | &nbsp;
